@@ -1,0 +1,17 @@
+C:\Users\HP\Desktop\Projects\SteamSearch\SteamSearch\bin\Debug\net8.0-windows\SteamSearch.exe
+C:\Users\HP\Desktop\Projects\SteamSearch\SteamSearch\bin\Debug\net8.0-windows\SteamSearch.deps.json
+C:\Users\HP\Desktop\Projects\SteamSearch\SteamSearch\bin\Debug\net8.0-windows\SteamSearch.runtimeconfig.json
+C:\Users\HP\Desktop\Projects\SteamSearch\SteamSearch\bin\Debug\net8.0-windows\SteamSearch.dll
+C:\Users\HP\Desktop\Projects\SteamSearch\SteamSearch\bin\Debug\net8.0-windows\SteamSearch.pdb
+C:\Users\HP\Desktop\Projects\SteamSearch\SteamSearch\obj\Debug\net8.0-windows\SteamSearch.Form1.resources
+C:\Users\HP\Desktop\Projects\SteamSearch\SteamSearch\obj\Debug\net8.0-windows\SteamSearch.csproj.GenerateResource.cache
+C:\Users\HP\Desktop\Projects\SteamSearch\SteamSearch\obj\Debug\net8.0-windows\SteamSearch.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\Desktop\Projects\SteamSearch\SteamSearch\obj\Debug\net8.0-windows\SteamSearch.AssemblyInfoInputs.cache
+C:\Users\HP\Desktop\Projects\SteamSearch\SteamSearch\obj\Debug\net8.0-windows\SteamSearch.AssemblyInfo.cs
+C:\Users\HP\Desktop\Projects\SteamSearch\SteamSearch\obj\Debug\net8.0-windows\SteamSearch.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\Projects\SteamSearch\SteamSearch\obj\Debug\net8.0-windows\SteamSearch.sourcelink.json
+C:\Users\HP\Desktop\Projects\SteamSearch\SteamSearch\obj\Debug\net8.0-windows\SteamSearch.dll
+C:\Users\HP\Desktop\Projects\SteamSearch\SteamSearch\obj\Debug\net8.0-windows\refint\SteamSearch.dll
+C:\Users\HP\Desktop\Projects\SteamSearch\SteamSearch\obj\Debug\net8.0-windows\SteamSearch.pdb
+C:\Users\HP\Desktop\Projects\SteamSearch\SteamSearch\obj\Debug\net8.0-windows\SteamSearch.genruntimeconfig.cache
+C:\Users\HP\Desktop\Projects\SteamSearch\SteamSearch\obj\Debug\net8.0-windows\ref\SteamSearch.dll
