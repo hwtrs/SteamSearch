@@ -26,6 +26,8 @@ namespace SteamSearch
                 listBox1.Items.Add(heldText);
                 textBox1.Text = "";
                 heldText = "";
+
+
             }
         }
     }
