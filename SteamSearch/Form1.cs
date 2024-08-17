@@ -1,7 +1,16 @@
+using System.Net;
+using System.Threading.Tasks;
+using System.Diagnostics;
+using SteamKit2;
+
 namespace SteamSearch
 {
     public partial class Form1 : Form
     {
+
+        WebClient client = new WebClient();
+        string response;
+
         // Text held in textBox1
         string heldText;
         public Form1()
@@ -19,8 +28,10 @@ namespace SteamSearch
             heldText = textBox1.Text;
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        public void button2_Click(object sender, EventArgs e)
         {
+            response = client.DownloadString("https://store.steampowered.com/api/appdetails?appids=730");
+            Debug.WriteLine(response);
             if (heldText != "")
             {
                 listBox1.Items.Add(heldText);
@@ -30,5 +41,7 @@ namespace SteamSearch
 
             }
         }
+
+        
     }
 }

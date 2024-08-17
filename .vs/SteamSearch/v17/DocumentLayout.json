@@ -7,12 +7,15 @@
       "RelativeMoniker": "D:0:0:{1CA541AB-9FEF-4619-A155-B57741CAF8CE}|SteamSearch\\SteamSearch.csproj|solutionrelative:steamsearch\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1CA541AB-9FEF-4619-A155-B57741CAF8CE}|SteamSearch\\SteamSearch.csproj|c:\\users\\hp\\desktop\\projects\\steamsearch\\steamsearch\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{1CA541AB-9FEF-4619-A155-B57741CAF8CE}|SteamSearch\\SteamSearch.csproj|solutionrelative:steamsearch\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1CA541AB-9FEF-4619-A155-B57741CAF8CE}|SteamSearch\\SteamSearch.csproj|c:\\users\\hp\\desktop\\projects\\steamsearch\\steamsearch\\steamsearch.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{1CA541AB-9FEF-4619-A155-B57741CAF8CE}|SteamSearch\\SteamSearch.csproj|solutionrelative:steamsearch\\steamsearch.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\HP\\.nuget\\packages\\steamkit2\\2.5.0\\readme.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CA541AB-9FEF-4619-A155-B57741CAF8CE}|SteamSearch\\SteamSearch.csproj|C:\\Users\\HP\\Desktop\\Projects\\SteamSearch\\steamsearch\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1CA541AB-9FEF-4619-A155-B57741CAF8CE}|SteamSearch\\SteamSearch.csproj|solutionrelative:steamsearch\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1CA541AB-9FEF-4619-A155-B57741CAF8CE}|SteamSearch\\SteamSearch.csproj|c:\\users\\hp\\desktop\\projects\\steamsearch\\steamsearch\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -30,8 +33,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "readme.txt",
+              "DocumentMoniker": "C:\\Users\\HP\\.nuget\\packages\\steamkit2\\2.5.0\\readme.txt",
+              "RelativeDocumentMoniker": "..\\..\\..\\.nuget\\packages\\steamkit2\\2.5.0\\readme.txt",
+              "ToolTip": "C:\\Users\\HP\\.nuget\\packages\\steamkit2\\2.5.0\\readme.txt",
+              "RelativeToolTip": "..\\..\\..\\.nuget\\packages\\steamkit2\\2.5.0\\readme.txt",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-08-17T03:27:35.904Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -40,14 +56,14 @@
               "RelativeDocumentMoniker": "SteamSearch\\Form1.cs",
               "ToolTip": "C:\\Users\\HP\\Desktop\\Projects\\SteamSearch\\SteamSearch\\Form1.cs",
               "RelativeToolTip": "SteamSearch\\Form1.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAgAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-10T04:06:03.076Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "SteamSearch.csproj",
               "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Projects\\SteamSearch\\SteamSearch\\SteamSearch.csproj",
               "RelativeDocumentMoniker": "SteamSearch\\SteamSearch.csproj",
@@ -55,23 +71,25 @@
               "RelativeToolTip": "SteamSearch\\SteamSearch.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-08-10T04:00:52.042Z"
+              "WhenOpened": "2024-08-10T04:00:52.042Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Projects\\SteamSearch\\SteamSearch\\Program.cs",
               "RelativeDocumentMoniker": "SteamSearch\\Program.cs",
               "ToolTip": "C:\\Users\\HP\\Desktop\\Projects\\SteamSearch\\SteamSearch\\Program.cs",
               "RelativeToolTip": "SteamSearch\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-10T04:00:44.035Z"
+              "WhenOpened": "2024-08-10T04:00:44.035Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Form1.Designer.cs",
               "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Projects\\SteamSearch\\SteamSearch\\Form1.Designer.cs",
               "RelativeDocumentMoniker": "SteamSearch\\Form1.Designer.cs",
@@ -84,7 +102,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Projects\\SteamSearch\\SteamSearch\\Form1.cs",
               "RelativeDocumentMoniker": "SteamSearch\\Form1.cs",
