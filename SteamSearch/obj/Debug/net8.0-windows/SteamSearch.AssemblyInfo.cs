@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SteamSearch")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3c6c4e32bda529e31111310dbe94451922eedec7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+79b4c06892235e068374432badaf120c849ef215")]
 [assembly: System.Reflection.AssemblyProductAttribute("SteamSearch")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SteamSearch")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

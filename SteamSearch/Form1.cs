@@ -32,23 +32,10 @@ namespace SteamSearch
         {
             string formattedText;
             string tempStr = "";
-            for (int i = 0; i < heldText.Length; i++)
-            {
-                if (heldText[i].ToString() == "a" || heldText[i].ToString() == "p")
-                {
-                    tempStr = tempStr + heldText[i];
-                    Debug.WriteLine("tempStr is now " + tempStr);
-                }
-                if (heldText == "app")
-                {
-                    Debug.WriteLine(tempStr);
-                }
-                else
-                {
-                    Debug.WriteLine("heldText[i] is " + heldText[i]);
-                }
-            }
-            response = client.DownloadString("https://store.steampowered.com/api/appdetails?appids=730");
+            int appIndex = heldText.IndexOf("app", 0);
+            int appID = Int32.Parse(heldText.Substring(appIndex, 3));
+            Debug.WriteLine(appIndex.ToString());
+            response = client.DownloadString("https://store.steampowered.com/api/appdetails?appids=" + appID);
             Debug.WriteLine(response);
             if (heldText != "")
             {
