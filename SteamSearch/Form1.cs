@@ -33,9 +33,13 @@ namespace SteamSearch
             {
                 listBox1.Items.Add(name);
                 textBox1.Text = "";
-            }        
+            }
             int positive_recommendations = GetRecommendations(true, appID.ToString());
             int negative_recommendations = GetRecommendations(false, appID.ToString());
+
+
+            // Add new AppData entry to List apps
+            apps.Add(new AppData(appID, name, positive_recommendations, negative_recommendations));
         }
         public string GetAppName(string appID)
         {

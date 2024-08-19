@@ -45,9 +45,21 @@
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "dependencies": {
+            "ScottPlot": {
+              "target": "Package",
+              "version": "[5.0.37, )"
+            },
+            "ScottPlot.WinForms": {
+              "target": "Package",
+              "version": "[5.0.37, )"
+            },
             "SteamKit2": {
               "target": "Package",
               "version": "[2.5.0, )"
+            },
+            "WinForms.DataVisualization": {
+              "target": "Package",
+              "version": "[1.9.2, )"
             }
           },
           "imports": [

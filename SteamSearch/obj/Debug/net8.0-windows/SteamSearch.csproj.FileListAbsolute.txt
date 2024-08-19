@@ -20,3 +20,8 @@ C:\Users\HP\Desktop\Projects\SteamSearch\SteamSearch\bin\Debug\net8.0-windows\pr
 C:\Users\HP\Desktop\Projects\SteamSearch\SteamSearch\bin\Debug\net8.0-windows\SteamKit2.dll
 C:\Users\HP\Desktop\Projects\SteamSearch\SteamSearch\obj\Debug\net8.0-windows\SteamSearch.csproj.AssemblyReference.cache
 C:\Users\HP\Desktop\Projects\SteamSearch\SteamSearch\obj\Debug\net8.0-windows\SteamSea.54161466.Up2Date
+C:\Users\HP\Desktop\Projects\SteamSearch\SteamSearch\bin\Debug\net8.0-windows\LiveCharts.dll
+C:\Users\HP\Desktop\Projects\SteamSearch\SteamSearch\bin\Debug\net8.0-windows\LiveCharts.Wpf.dll
+C:\Users\HP\Desktop\Projects\SteamSearch\SteamSearch\bin\Debug\net8.0-windows\WinForms.DataVisualization.Utilities.dll
+C:\Users\HP\Desktop\Projects\SteamSearch\SteamSearch\bin\Debug\net8.0-windows\WinForms.DataVisualization.dll
+C:\Users\HP\Desktop\Projects\SteamSearch\SteamSearch\bin\Debug\net8.0-windows\LiveCharts.WinForms.dll
