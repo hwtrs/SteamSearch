@@ -32,8 +32,9 @@ namespace SteamSearch
             string formattedText;
             string tempStr = "";
             int appIndex = heldText.IndexOf("app", 0);
-            int appID = Int32.Parse(heldText.Substring(appIndex + 4, 3));
-            Debug.WriteLine(appIndex.ToString());
+            int appIDLength = GetAppIDLength(heldText);
+            int appID = Int32.Parse(heldText.Substring(appIndex + 4, appIDLength - 1));
+            Debug.WriteLine(appID);
             string name = GetAppName(appID.ToString());
             if (name != "")
             {
@@ -53,7 +54,7 @@ namespace SteamSearch
             { 
                 if (jsonRaw[nameIndex + i] ==  '"')
                 {
-                    return "G: " + name;
+                    return name;
                 }
                 else
                 {
@@ -62,6 +63,24 @@ namespace SteamSearch
             }
             return "null";
 
+        }
+
+        public int GetAppIDLength(string input)
+        {
+            int startingIndex = heldText.IndexOf("app", 0) + 4;
+            int appIDLength = 0;
+            for (int i = 0; i < input.Length; i++)
+            {
+                if (input[startingIndex + i] == '/')
+                {
+                    return appIDLength + 1;
+                }
+                else
+                {
+                    appIDLength++;
+                }
+            }
+            return appIDLength + 1;
         }
 
         
