@@ -5,11 +5,17 @@ using SteamKit2;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
+using ScottPlot;
 
 namespace SteamSearch
 {
     public partial class Form1 : Form
     {
+
+        // Plot Setup
+        ScottPlot.Plot displayPlot = new();
+
+
         // WebClient for HTTP requests
         WebClient client = new WebClient();
 
@@ -36,6 +42,9 @@ namespace SteamSearch
             }
             int positive_recommendations = GetRecommendations(true, appID.ToString());
             int negative_recommendations = GetRecommendations(false, appID.ToString());
+            formsPlot1.Plot.Add.Scatter(1, 5);
+            formsPlot1.Plot.Add.Scatter(3, 5);
+            formsPlot1.Refresh();
 
 
             // Add new AppData entry to List apps
@@ -103,7 +112,7 @@ namespace SteamSearch
             else
             {
                 string count = "";
-                int start = jsonRaw.IndexOf("total_negative") + 17;
+                int start = jsonRaw.IndexOf("total_negative") + 16;
                 for (int i = 0; i < jsonRaw.Length; i++)
                 {
                     if (jsonRaw[start + i] == ',')
@@ -126,5 +135,9 @@ namespace SteamSearch
             return 0;
         }
 
+        private void formsPlot1_Load(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

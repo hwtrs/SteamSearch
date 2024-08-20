@@ -32,6 +32,7 @@
             listBox1 = new ListBox();
             textBox1 = new TextBox();
             button2 = new Button();
+            formsPlot1 = new ScottPlot.WinForms.FormsPlot();
             SuspendLayout();
             // 
             // button1
@@ -69,11 +70,21 @@
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click;
             // 
+            // formsPlot1
+            // 
+            formsPlot1.DisplayScale = 1F;
+            formsPlot1.Location = new Point(275, 82);
+            formsPlot1.Name = "formsPlot1";
+            formsPlot1.Size = new Size(478, 327);
+            formsPlot1.TabIndex = 4;
+            formsPlot1.Load += formsPlot1_Load;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(818, 459);
+            Controls.Add(formsPlot1);
             Controls.Add(button2);
             Controls.Add(textBox1);
             Controls.Add(listBox1);
@@ -90,5 +101,6 @@
         private ListBox listBox1;
         private TextBox textBox1;
         private Button button2;
+        private ScottPlot.WinForms.FormsPlot formsPlot1;
     }
 }
