@@ -108,7 +108,14 @@ namespace SteamSearch
                 {
                     if (jsonRaw[start + i] == ',')
                     {
-                        return Int32.Parse(count);
+                        if (count != "")
+                        {
+                            return Int32.Parse(count);
+                        }
+                        else
+                        {
+                            return 0;
+                        }
                     }
                     else
                     {
