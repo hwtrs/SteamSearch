@@ -6,6 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.Configuration;
 using ScottPlot;
+using static System.Net.WebRequestMethods;
 
 namespace SteamSearch
 {
@@ -20,7 +21,7 @@ namespace SteamSearch
         WebClient client = new WebClient();
 
         // List of apps
-        // An AppData is a new AppData(int appID, string name, int recomendations) 
+        // An AppData is a new AppData(int appID, string name, int pos_recomendations, int neg_recommendations, string price) 
         List<AppData> apps = new List<AppData>();
 
         // Text held in textBox1
@@ -42,17 +43,25 @@ namespace SteamSearch
             }
             int positive_recommendations = GetRecommendations(true, appID.ToString());
             int negative_recommendations = GetRecommendations(false, appID.ToString());
-            formsPlot1.Plot.Add.Scatter(1, 5);
-            formsPlot1.Plot.Add.Scatter(3, 5);
+            string price = GetAppPrice(appID.ToString());
+
+            float satisfaction = (positive_recommendations / (negative_recommendations + positive_recommendations)) * 100;
+            Debug.WriteLine("Pos: " + positive_recommendations);
+            Debug.WriteLine("Neg: " + negative_recommendations);
+            Debug.WriteLine("Satisfaction: " + satisfaction + "%");
+            float test = float.Parse(price);
+            Debug.WriteLine("Price: " + test.ToString());
+            formsPlot1.Plot.Add.Scatter(test, satisfaction);
             formsPlot1.Refresh();
 
 
             // Add new AppData entry to List apps
-            apps.Add(new AppData(appID, name, positive_recommendations, negative_recommendations));
+            apps.Add(new AppData(appID, name, positive_recommendations, negative_recommendations, price));
         }
         public string GetAppName(string appID)
         {
             string jsonRaw = client.DownloadString("https://store.steampowered.com/api/appdetails?appids=" + appID);
+            Debug.WriteLine(jsonRaw);
             int nameIndex = jsonRaw.IndexOf("name", 0) + 7;
             string name = "";
             for (int i = 0; i < jsonRaw.Length; i++)
@@ -97,14 +106,12 @@ namespace SteamSearch
                 int start = jsonRaw.IndexOf("total_positive") + 16;
                 for (int i = 0; i < jsonRaw.Length; i++)
                 {
-                    Debug.WriteLine(count);
                     if (jsonRaw[start + i] == ',')
                     {
                         return Int32.Parse(count);
                     }
                     else
                     {
-                        Debug.WriteLine("hewre " + count);
                         count = count + jsonRaw[start + i];
                     }
                 }
@@ -135,9 +142,27 @@ namespace SteamSearch
             return 0;
         }
 
-        private void formsPlot1_Load(object sender, EventArgs e)
+        public string GetAppPrice(string id)
         {
-            
+            string jsonRaw = client.DownloadString("https://store.steampowered.com/api/appdetails?appids=" + id);
+            int priceIndex = jsonRaw.IndexOf("CDN$") + 5;
+            string formattedPrice = "";
+            for (int i = 0; i < jsonRaw.Length; i++)
+            {
+                if (jsonRaw[priceIndex + i] == '"')
+                {
+                    return formattedPrice;
+                }
+                else
+                {
+                    Debug.WriteLine("price: " + formattedPrice);
+                    formattedPrice = formattedPrice + jsonRaw[priceIndex + i];
+                }
+            }
+            return "";
+            //https://store.steampowered.com/api/appdetails?appids=292030
+            //https://store.steampowered.com/api/appdetails?appids=292030
         }
+
     }
 }

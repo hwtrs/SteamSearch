@@ -77,7 +77,6 @@
             formsPlot1.Name = "formsPlot1";
             formsPlot1.Size = new Size(478, 327);
             formsPlot1.TabIndex = 4;
-            formsPlot1.Load += formsPlot1_Load;
             // 
             // Form1
             // 

@@ -7,20 +7,20 @@
       "RelativeMoniker": "D:0:0:{1CA541AB-9FEF-4619-A155-B57741CAF8CE}|SteamSearch\\SteamSearch.csproj|solutionrelative:steamsearch\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1CA541AB-9FEF-4619-A155-B57741CAF8CE}|SteamSearch\\SteamSearch.csproj|C:\\Users\\HP\\Desktop\\Projects\\SteamSearch\\steamsearch\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{1CA541AB-9FEF-4619-A155-B57741CAF8CE}|SteamSearch\\SteamSearch.csproj|solutionrelative:steamsearch\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{1CA541AB-9FEF-4619-A155-B57741CAF8CE}|SteamSearch\\SteamSearch.csproj|c:\\users\\hp\\desktop\\projects\\steamsearch\\steamsearch\\appdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CA541AB-9FEF-4619-A155-B57741CAF8CE}|SteamSearch\\SteamSearch.csproj|solutionrelative:steamsearch\\appdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1CA541AB-9FEF-4619-A155-B57741CAF8CE}|SteamSearch\\SteamSearch.csproj|c:\\users\\hp\\desktop\\projects\\steamsearch\\steamsearch\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1CA541AB-9FEF-4619-A155-B57741CAF8CE}|SteamSearch\\SteamSearch.csproj|solutionrelative:steamsearch\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1CA541AB-9FEF-4619-A155-B57741CAF8CE}|SteamSearch\\SteamSearch.csproj|c:\\users\\hp\\desktop\\projects\\steamsearch\\steamsearch\\appdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1CA541AB-9FEF-4619-A155-B57741CAF8CE}|SteamSearch\\SteamSearch.csproj|solutionrelative:steamsearch\\appdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1CA541AB-9FEF-4619-A155-B57741CAF8CE}|SteamSearch\\SteamSearch.csproj|c:\\users\\hp\\desktop\\projects\\steamsearch\\steamsearch\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1CA541AB-9FEF-4619-A155-B57741CAF8CE}|SteamSearch\\SteamSearch.csproj|solutionrelative:steamsearch\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CA541AB-9FEF-4619-A155-B57741CAF8CE}|SteamSearch\\SteamSearch.csproj|C:\\Users\\HP\\Desktop\\Projects\\SteamSearch\\steamsearch\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1CA541AB-9FEF-4619-A155-B57741CAF8CE}|SteamSearch\\SteamSearch.csproj|solutionrelative:steamsearch\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,15 +34,16 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "AppData.cs",
               "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Projects\\SteamSearch\\SteamSearch\\AppData.cs",
               "RelativeDocumentMoniker": "SteamSearch\\AppData.cs",
               "ToolTip": "C:\\Users\\HP\\Desktop\\Projects\\SteamSearch\\SteamSearch\\AppData.cs",
               "RelativeToolTip": "SteamSearch\\AppData.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAbAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-19T15:04:02.479Z"
+              "WhenOpened": "2024-08-19T15:04:02.479Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -52,14 +53,14 @@
               "RelativeDocumentMoniker": "SteamSearch\\Form1.cs",
               "ToolTip": "C:\\Users\\HP\\Desktop\\Projects\\SteamSearch\\SteamSearch\\Form1.cs",
               "RelativeToolTip": "SteamSearch\\Form1.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAiwBkAAAAgAAAA",
+              "ViewState": "AQIAAGQAAAAAAAAAAAAIwHIAAAA7AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-10T04:06:03.076Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Projects\\SteamSearch\\SteamSearch\\Program.cs",
               "RelativeDocumentMoniker": "SteamSearch\\Program.cs",
@@ -67,7 +68,8 @@
               "RelativeToolTip": "SteamSearch\\Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-10T04:00:44.035Z"
+              "WhenOpened": "2024-08-10T04:00:44.035Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -77,22 +79,21 @@
               "RelativeDocumentMoniker": "SteamSearch\\Form1.Designer.cs",
               "ToolTip": "C:\\Users\\HP\\Desktop\\Projects\\SteamSearch\\SteamSearch\\Form1.Designer.cs",
               "RelativeToolTip": "SteamSearch\\Form1.Designer.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAAowBYAAAAIAAAA",
+              "ViewState": "AQIAADAAAAAAAAAAAAAowE4AAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-10T04:00:39.305Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Projects\\SteamSearch\\SteamSearch\\Form1.cs",
               "RelativeDocumentMoniker": "SteamSearch\\Form1.cs",
               "ToolTip": "C:\\Users\\HP\\Desktop\\Projects\\SteamSearch\\SteamSearch\\Form1.cs [Design]",
               "RelativeToolTip": "SteamSearch\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-10T04:00:05.077Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-08-10T04:00:05.077Z"
             }
           ]
         }
