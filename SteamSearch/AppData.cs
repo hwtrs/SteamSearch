@@ -10,11 +10,11 @@ namespace SteamSearch
     {
         public int appID;
         public string name;
-        public int pos_recommendations;
-        public int neg_recommendations;
+        public float pos_recommendations;
+        public float neg_recommendations;
         public string price;
 
-        public AppData(int _appID, string _name, int _pos_recommendations, int _neg_recommendations, string _price)
+        public AppData(int _appID, string _name, float _pos_recommendations, float _neg_recommendations, string _price)
         {
             appID = _appID;
             name = _name;
@@ -25,8 +25,8 @@ namespace SteamSearch
         
         public int GetAppID() { return appID; }
         public string GetName() { return name; }
-        public int GetPosRecommendations() { return pos_recommendations; }
-        public int GetNegRecommendations() { return neg_recommendations;}
+        public float GetPosRecommendations() { return pos_recommendations; }
+        public float GetNegRecommendations() { return neg_recommendations;}
         public string GetPrice() { return price; }
     }
 }

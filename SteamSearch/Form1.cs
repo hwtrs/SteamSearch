@@ -41,16 +41,16 @@ namespace SteamSearch
                 listBox1.Items.Add(name);
                 textBox1.Text = "";
             }
-            int positive_recommendations = GetRecommendations(true, appID.ToString());
-            int negative_recommendations = GetRecommendations(false, appID.ToString());
+            float positive_recommendations = GetRecommendations(true, appID.ToString());
+            float negative_recommendations = GetRecommendations(false, appID.ToString());
             string price = GetAppPrice(appID.ToString());
-
-            float satisfaction = (positive_recommendations / (negative_recommendations + positive_recommendations)) * 100;
+            Debug.WriteLine(19 / 19);
+            double satisfaction = (double)(positive_recommendations / (positive_recommendations + negative_recommendations)) * 100;
             Debug.WriteLine("Pos: " + positive_recommendations);
             Debug.WriteLine("Neg: " + negative_recommendations);
-            Debug.WriteLine("Satisfaction: " + satisfaction + "%");
+            Debug.WriteLine("Satisfaction: " + satisfaction * 100 + "%");
             float test = float.Parse(price);
-            Debug.WriteLine("Price: " + test.ToString());
+            Debug.WriteLine("Price: " + test);
             formsPlot1.Plot.Add.Scatter(test, satisfaction);
             formsPlot1.Refresh();
 
@@ -97,7 +97,7 @@ namespace SteamSearch
             return appIDLength + 1;
         }
 
-        public int GetRecommendations(bool positive, string id)
+        public float GetRecommendations(bool positive, string id)
         {
             string jsonRaw = client.DownloadString("https://store.steampowered.com/appreviews/" + id + "?json=1&language=all");
             if (positive)
