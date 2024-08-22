@@ -44,14 +44,8 @@ namespace SteamSearch
             float positive_recommendations = GetRecommendations(true, appID.ToString());
             float negative_recommendations = GetRecommendations(false, appID.ToString());
             string price = GetAppPrice(appID.ToString());
-            Debug.WriteLine(19 / 19);
             double satisfaction = (double)(positive_recommendations / (positive_recommendations + negative_recommendations)) * 100;
-            Debug.WriteLine("Pos: " + positive_recommendations);
-            Debug.WriteLine("Neg: " + negative_recommendations);
-            Debug.WriteLine("Satisfaction: " + satisfaction * 100 + "%");
-            float test = float.Parse(price);
-            Debug.WriteLine("Price: " + test);
-            formsPlot1.Plot.Add.Scatter(test, satisfaction);
+            formsPlot1.Plot.Add.Scatter(float.Parse(price), satisfaction);
             formsPlot1.Refresh();
 
 
