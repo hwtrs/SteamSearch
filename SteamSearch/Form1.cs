@@ -144,7 +144,7 @@ namespace SteamSearch
 
         public string GetAppPrice(string id)
         {
-            string jsonRaw = client.DownloadString("https://store.steampowered.com/api/appdetails?appids=" + id);
+            string jsonRaw = client.DownloadString("https://store.steampowered.com/api/appdetails?appids=" + id + "&cc=ca");
             int priceIndex = jsonRaw.IndexOf("CDN$") + 5;
             string formattedPrice = "";
             for (int i = 0; i < jsonRaw.Length; i++)
