@@ -7,6 +7,8 @@ using System.Collections.Generic;
 using System.Configuration;
 using ScottPlot;
 using static System.Net.WebRequestMethods;
+using System.Drawing.Imaging;
+using ScottPlot.WinForms;
 
 namespace SteamSearch
 {
@@ -15,7 +17,6 @@ namespace SteamSearch
 
         // Plot Setup
         ScottPlot.Plot displayPlot = new();
-
 
         // WebClient for HTTP requests
         WebClient client = new WebClient();
@@ -46,6 +47,13 @@ namespace SteamSearch
             string price = GetAppPrice(appID.ToString());
             double satisfaction = (double)(positive_recommendations / (positive_recommendations + negative_recommendations)) * 100;
             formsPlot1.Plot.Add.Scatter(float.Parse(price), satisfaction);
+            formsPlot1.Plot.Legend.IsVisible = true;
+            LegendItem legendItem = new()
+            {
+                LineColor = ScottPlot.Colors.Blue,
+            };
+            LegendItem[] items = [legendItem];
+            formsPlot1.Plot.ShowLegend(items);
             formsPlot1.Refresh();
 
 
@@ -158,5 +166,9 @@ namespace SteamSearch
             //https://store.steampowered.com/api/appdetails?appids=292030
         }
 
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
