@@ -29,11 +29,14 @@ namespace SteamSearch
         // An AppData is a new AppData(int appID, string name, int pos_recomendations, int neg_recommendations, string price) 
         List<AppData> apps = new List<AppData>();
 
-        // Text held in textBox1
+        // App in listbox selected by user
+        AppData selectedApp;
         public Form1()
         {
             InitializeComponent();
-            formsPlot1.Plot.Axes.SetLimits(0, 250, 0, 105);
+            formsPlot1.Plot.Axes.SetLimits(0, 125, 0, 105);
+            formsPlot1.Plot.Axes.Bottom.Label.Text = "Price ($CAD)";
+            formsPlot1.Plot.Axes.Left.Label.Text = "% Satisfaction";
         }
 
         public void button2_Click(object sender, EventArgs e)

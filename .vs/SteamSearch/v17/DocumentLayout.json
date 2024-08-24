@@ -52,7 +52,7 @@
               "RelativeDocumentMoniker": "SteamSearch\\Form1.cs",
               "ToolTip": "C:\\Users\\HP\\Desktop\\Projects\\SteamSearch\\SteamSearch\\Form1.cs",
               "RelativeToolTip": "SteamSearch\\Form1.cs",
-              "ViewState": "AQIAABQAAAAAAAAAAAAiwCYAAAA9AAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAUwCIAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-10T04:06:03.076Z",
               "EditorCaption": ""
@@ -79,7 +79,8 @@
               "RelativeToolTip": "SteamSearch\\Form1.Designer.cs",
               "ViewState": "AQIAABYAAAAAAAAAAAAowBYAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-10T04:00:39.305Z"
+              "WhenOpened": "2024-08-10T04:00:39.305Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -90,7 +91,8 @@
               "ToolTip": "C:\\Users\\HP\\Desktop\\Projects\\SteamSearch\\SteamSearch\\Form1.cs [Design]",
               "RelativeToolTip": "SteamSearch\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-10T04:00:05.077Z"
+              "WhenOpened": "2024-08-10T04:00:05.077Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }
