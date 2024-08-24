@@ -9,6 +9,7 @@ using ScottPlot;
 using static System.Net.WebRequestMethods;
 using System.Drawing.Imaging;
 using ScottPlot.WinForms;
+using ScottPlot.Colormaps;
 
 namespace SteamSearch
 {
@@ -17,6 +18,8 @@ namespace SteamSearch
 
         // Plot Setup
         ScottPlot.Plot displayPlot = new();
+        List<LegendItem> items = new List<LegendItem>();
+        ScottPlot.Color[] colors = [Colors.Blue, Colors.Red, Colors.Green];
 
         // WebClient for HTTP requests
         WebClient client = new WebClient();
@@ -48,11 +51,16 @@ namespace SteamSearch
             double satisfaction = (double)(positive_recommendations / (positive_recommendations + negative_recommendations)) * 100;
             formsPlot1.Plot.Add.Scatter(float.Parse(price), satisfaction);
             formsPlot1.Plot.Legend.IsVisible = true;
+            //items.Add()
             LegendItem legendItem = new()
             {
-                LineColor = ScottPlot.Colors.Blue,
+                LineColor = colors[items.Count],
+                MarkerFillColor = colors[items.Count],
+                MarkerLineColor = colors[items.Count],
+                LineWidth = 2,
+                LabelText = name
             };
-            LegendItem[] items = [legendItem];
+            items.Add(legendItem);
             formsPlot1.Plot.ShowLegend(items);
             formsPlot1.Refresh();
 
