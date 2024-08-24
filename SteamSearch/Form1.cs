@@ -20,6 +20,7 @@ namespace SteamSearch
         ScottPlot.Plot displayPlot = new();
         List<LegendItem> items = new List<LegendItem>();
         ScottPlot.Color[] colors = [Colors.Blue, Colors.Red, Colors.Green];
+        
 
         // WebClient for HTTP requests
         WebClient client = new WebClient();
@@ -32,6 +33,7 @@ namespace SteamSearch
         public Form1()
         {
             InitializeComponent();
+            formsPlot1.Plot.Axes.SetLimits(0, 250, 0, 105);
         }
 
         public void button2_Click(object sender, EventArgs e)
@@ -50,7 +52,7 @@ namespace SteamSearch
             string price = GetAppPrice(appID.ToString());
             double satisfaction = (double)(positive_recommendations / (positive_recommendations + negative_recommendations)) * 100;
             formsPlot1.Plot.Add.Scatter(float.Parse(price), satisfaction);
-            formsPlot1.Plot.Legend.IsVisible = true;
+            formsPlot1.Plot.Legend.IsVisible = true;          
             //items.Add()
             LegendItem legendItem = new()
             {
