@@ -19,7 +19,7 @@ namespace SteamSearch
         // Plot Setup
         ScottPlot.Plot displayPlot = new();
         List<LegendItem> items = new List<LegendItem>();
-        ScottPlot.Color[] colors = [Colors.Blue, Colors.Red, Colors.Green];
+        ScottPlot.Color[] colors = [Colors.Blue, Colors.Red, Colors.Green, Colors.Yellow, Colors.DarkOrange, Colors.Cyan];
         
 
         // WebClient for HTTP requests
@@ -29,14 +29,18 @@ namespace SteamSearch
         // An AppData is a new AppData(int appID, string name, int pos_recomendations, int neg_recommendations, string price) 
         List<AppData> apps = new List<AppData>();
 
-        // App in listbox selected by user
-        AppData selectedApp;
+        
+       
         public Form1()
         {
             InitializeComponent();
             formsPlot1.Plot.Axes.SetLimits(0, 125, 0, 105);
             formsPlot1.Plot.Axes.Bottom.Label.Text = "Price ($CAD)";
             formsPlot1.Plot.Axes.Left.Label.Text = "% Satisfaction";
+
+            // Enabling KeyPreview to Register KeyDown Events
+            this.KeyPreview = true;
+            this.KeyDown += new KeyEventHandler(Form1_KeyDown);
         }
 
         public void button2_Click(object sender, EventArgs e)
@@ -54,9 +58,8 @@ namespace SteamSearch
             float negative_recommendations = GetRecommendations(false, appID.ToString());
             string price = GetAppPrice(appID.ToString());
             double satisfaction = (double)(positive_recommendations / (positive_recommendations + negative_recommendations)) * 100;
-            formsPlot1.Plot.Add.Scatter(float.Parse(price), satisfaction);
+            formsPlot1.Plot.Add.Scatter(float.Parse(price), satisfaction, colors[items.Count]);
             formsPlot1.Plot.Legend.IsVisible = true;          
-            //items.Add()
             LegendItem legendItem = new()
             {
                 LineColor = colors[items.Count],
@@ -179,9 +182,15 @@ namespace SteamSearch
             //https://store.steampowered.com/api/appdetails?appids=292030
         }
 
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
-
+            Debug.WriteLine("Got here");
+            if ((e.KeyCode == Keys.Space | e.KeyCode == Keys.Back) || listBox1.SelectedIndex != -1)
+            {
+                apps.Remove(apps[listBox1.SelectedIndex]);
+                listBox1.Items.Remove(listBox1.SelectedIndex);
+            }
         }
+
     }
 }
