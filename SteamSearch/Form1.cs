@@ -185,27 +185,48 @@ namespace SteamSearch
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
             
-            if ((e.KeyCode == Keys.Space | e.KeyCode == Keys.Back) || listBox1.SelectedIndex != -1)
+            if ((e.KeyCode == Keys.Delete | e.KeyCode == Keys.Back) || listBox1.SelectedIndex != -1)
             {
                 apps.Remove(apps[listBox1.SelectedIndex]);
+                items.Remove(items[listBox1.SelectedIndex]);
                 listBox1.Items.Remove(listBox1.SelectedItem);
 
-                //Item Removed, time to rebuild the plot
+                //Item Removed, time to rebuild the plot              
                 RebuildPlot();
             }
         }
 
         public void RebuildPlot()
         {
+            //Rebuild Plot graphic
             int i = 0;
             formsPlot1.Plot.Clear();
             foreach (var app in apps)
             {
-                Debug.WriteLine("Got here");
                 double _satisfaction = (double)(app.pos_recommendations / (app.pos_recommendations + app.neg_recommendations)) * 100;
                 formsPlot1.Plot.Add.Scatter(float.Parse(app.price), _satisfaction, colors[i]);
                 i++;
             }
+
+
+            //Rebuild Legend
+            items.Clear();
+            int j = 0;
+            foreach (var app in apps)
+            {
+                LegendItem legendItem = new()
+                {
+                    LineColor = colors[j],
+                    MarkerFillColor = colors[j],
+                    MarkerLineColor = colors[j],
+                    LineWidth = 2,
+                    LabelText = app.name
+                };
+                items.Add(legendItem);
+                j++;
+            }
+            
+            formsPlot1.Plot.ShowLegend(items.ToArray());
             formsPlot1.Refresh();
         }
 
