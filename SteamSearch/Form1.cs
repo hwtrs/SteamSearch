@@ -184,12 +184,29 @@ namespace SteamSearch
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
-            Debug.WriteLine("Got here");
+            
             if ((e.KeyCode == Keys.Space | e.KeyCode == Keys.Back) || listBox1.SelectedIndex != -1)
             {
                 apps.Remove(apps[listBox1.SelectedIndex]);
-                listBox1.Items.Remove(listBox1.SelectedIndex);
+                listBox1.Items.Remove(listBox1.SelectedItem);
+
+                //Item Removed, time to rebuild the plot
+                RebuildPlot();
             }
+        }
+
+        public void RebuildPlot()
+        {
+            int i = 0;
+            formsPlot1.Plot.Clear();
+            foreach (var app in apps)
+            {
+                Debug.WriteLine("Got here");
+                double _satisfaction = (double)(app.pos_recommendations / (app.pos_recommendations + app.neg_recommendations)) * 100;
+                formsPlot1.Plot.Add.Scatter(float.Parse(app.price), _satisfaction, colors[i]);
+                i++;
+            }
+            formsPlot1.Refresh();
         }
 
     }
