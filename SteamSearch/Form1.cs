@@ -37,6 +37,7 @@ namespace SteamSearch
             formsPlot1.Plot.Axes.SetLimits(0, 125, 0, 105);
             formsPlot1.Plot.Axes.Bottom.Label.Text = "Price ($CAD)";
             formsPlot1.Plot.Axes.Left.Label.Text = "% Satisfaction";
+            formsPlot1.Plot.Title.Text = "% Satisfaction vs Price ($CAD)";
 
             // Enabling KeyPreview to Register KeyDown Events
             this.KeyPreview = true;
