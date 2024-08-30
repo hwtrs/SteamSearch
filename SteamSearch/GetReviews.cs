@@ -8,6 +8,13 @@ namespace SteamSearch
 {
     internal class GetReviews
     {
+
+        int appID;
+
+        public GetReviews(int _appID)
+        {
+            appID = _appID;
+        }
         public class Review()
         {
             public float playTime;

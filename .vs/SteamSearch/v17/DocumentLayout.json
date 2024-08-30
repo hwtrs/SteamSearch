@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\HP\\Desktop\\Projects\\SteamSearch\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1CA541AB-9FEF-4619-A155-B57741CAF8CE}|SteamSearch\\SteamSearch.csproj|c:\\users\\hp\\desktop\\projects\\steamsearch\\steamsearch\\getreviews.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1CA541AB-9FEF-4619-A155-B57741CAF8CE}|SteamSearch\\SteamSearch.csproj|solutionrelative:steamsearch\\getreviews.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1CA541AB-9FEF-4619-A155-B57741CAF8CE}|SteamSearch\\SteamSearch.csproj|c:\\users\\hp\\desktop\\projects\\steamsearch\\steamsearch\\appdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1CA541AB-9FEF-4619-A155-B57741CAF8CE}|SteamSearch\\SteamSearch.csproj|solutionrelative:steamsearch\\appdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CA541AB-9FEF-4619-A155-B57741CAF8CE}|SteamSearch\\SteamSearch.csproj|c:\\users\\hp\\desktop\\projects\\steamsearch\\steamsearch\\getreviews.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CA541AB-9FEF-4619-A155-B57741CAF8CE}|SteamSearch\\SteamSearch.csproj|solutionrelative:steamsearch\\getreviews.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1CA541AB-9FEF-4619-A155-B57741CAF8CE}|SteamSearch\\SteamSearch.csproj|c:\\users\\hp\\desktop\\projects\\steamsearch\\steamsearch\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -34,30 +34,30 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "GetReviews.cs",
               "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Projects\\SteamSearch\\SteamSearch\\GetReviews.cs",
               "RelativeDocumentMoniker": "SteamSearch\\GetReviews.cs",
               "ToolTip": "C:\\Users\\HP\\Desktop\\Projects\\SteamSearch\\SteamSearch\\GetReviews.cs",
               "RelativeToolTip": "SteamSearch\\GetReviews.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-30T01:44:55.526Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "AppData.cs",
               "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Projects\\SteamSearch\\SteamSearch\\AppData.cs",
               "RelativeDocumentMoniker": "SteamSearch\\AppData.cs",
               "ToolTip": "C:\\Users\\HP\\Desktop\\Projects\\SteamSearch\\SteamSearch\\AppData.cs",
               "RelativeToolTip": "SteamSearch\\AppData.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAIAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-19T15:04:02.479Z",
               "EditorCaption": ""
