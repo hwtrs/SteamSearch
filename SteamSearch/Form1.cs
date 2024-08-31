@@ -29,6 +29,9 @@ namespace SteamSearch
         // An AppData is a new AppData(int appID, string name, int pos_recomendations, int neg_recommendations, string price) 
         List<AppData> apps = new List<AppData>();
 
+        // Amount of reviews people want to pull for playtime analysis
+        int reviewCount = 200;
+
         
        
         public Form1()
@@ -37,7 +40,6 @@ namespace SteamSearch
             formsPlot1.Plot.Axes.SetLimits(0, 125, 0, 105);
             formsPlot1.Plot.Axes.Bottom.Label.Text = "Price ($CAD)";
             formsPlot1.Plot.Axes.Left.Label.Text = "% Satisfaction";
-            formsPlot1.Plot.Title.Text = "% Satisfaction vs Price ($CAD)";
 
             // Enabling KeyPreview to Register KeyDown Events
             this.KeyPreview = true;
