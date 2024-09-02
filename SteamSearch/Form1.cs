@@ -85,7 +85,7 @@ namespace SteamSearch
 
         private void listBox1_MouseDoubleClick(object sender, EventArgs e)
         {
-            Debug.WriteLine("Thingy");
+            int selectedAppID = apps[listBox1.SelectedIndex].GetAppID();
         }
         public string GetAppName(string appID)
         {
