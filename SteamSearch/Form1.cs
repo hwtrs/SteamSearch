@@ -32,11 +32,14 @@ namespace SteamSearch
         // Amount of reviews people want to pull for playtime analysis
         int reviewCount = 200;
 
-        
-       
+        public event EventHandler? DoubleClick;
+
+
+
         public Form1()
         {
             InitializeComponent();
+            listBox1.MouseDoubleClick += listBox1_MouseDoubleClick;
             formsPlot1.Plot.Axes.SetLimits(0, 125, 0, 105);
             formsPlot1.Plot.Axes.Bottom.Label.Text = "Price ($CAD)";
             formsPlot1.Plot.Axes.Left.Label.Text = "% Satisfaction";
@@ -78,6 +81,11 @@ namespace SteamSearch
 
             // Add new AppData entry to List apps
             apps.Add(new AppData(appID, name, positive_recommendations, negative_recommendations, price));
+        }
+
+        private void listBox1_MouseDoubleClick(object sender, EventArgs e)
+        {
+            Debug.WriteLine("Thingy");
         }
         public string GetAppName(string appID)
         {
