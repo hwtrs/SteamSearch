@@ -26,5 +26,12 @@ namespace SteamSearch
 
         //Get each review on a game and store it as a Review
 
+        // Begin Construction New Graph
+        public void ConstructGraph(int appID)
+        {
+            // Get all reviews and playtimes of a certain game of appID and graph it according to play time
+
+        }
+
     }
 }
